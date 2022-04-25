@@ -1,0 +1,40 @@
+<div class="container">
+  <h1 mat-dialog-title>{{edit ? 'Update Order' : 'New Order'}}</h1>
+<div mat-dialog-content class="mat-typography">
+  <form [formGroup]="orderForm" novalidate>
+    <mat-form-field appearance="fill">
+      <mat-label>Product</mat-label>
+      <input matInput formControlName="product">
+      <mat-error *ngIf="validFields('product')">Product is invalid</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Sellers</mat-label>
+      <mat-select matNativeControl formControlName="sellerId">
+          <mat-option *ngFor="let seller of sellers" [value]="seller.id">
+            {{seller.name}}
+          </mat-option>
+      </mat-select>
+      <mat-error *ngIf="validFields('sellerId')">Seller is invalid</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Country</mat-label>
+      <input matInput formControlName="country">
+      <mat-error *ngIf="validFields('country')">Country is invalid</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Price</mat-label>
+      <input matInput formControlName="price" type="number">
+      <mat-error *ngIf="validFields('price')">Price is invalid</mat-error>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary" (click)="saveOrder()" [disabled]="!orderForm.valid">Save</button>
+  <button mat-button (click)="closeModal()">Cancel</button>
+  <button mat-raised-button color="warn" (click)="deleteOrder()" *ngIf="edit">Delete</button>
+</div>
+
+</div>

@@ -1,0 +1,41 @@
+
+.container {
+  margin: auto;
+  margin-top: 10px;
+  width: 69%;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.topSellers {
+  display: flex;
+}
+
+.topSellers mat-card {
+  margin-right: 10px;
+}
+
+.actionsTable {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+mat-paginator {
+  width: 100%;
+  box-shadow:  0px 0px 3px;
+}
+
+.mat-column-orderId, .mat-column-product, .mat-column-price, .mat-column-seller, .mat-column-country, .mat-column-edit {
+  border-right: 1px solid currentColor;
+  text-align: center;
+}
+
+
+

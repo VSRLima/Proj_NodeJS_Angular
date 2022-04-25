@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(63 81 181);
+  padding: 10px;
+}
+
+.navbar-toggler {
+  border: 1px solid rgb(255 255 255);
+  background-color: rgb(63 81 181);
+  color: rgb(255 255 255);
+  font-size: 29px;
+}
+
+.mat-stroked-button:not(.mat-button-disabled) {
+  border-color: white;
+}
+
+.mat-stroked-button:not(.mat-button-disabled) {
+  color: white;
+}
+
+button {
+  margin-right: 5px;
+}

@@ -1,0 +1,23 @@
+<header>
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+  >
+    <div class="container">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        (click)="routeToHome()"
+      >
+        RTB
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="container">
+      <button mat-stroked-button color="primary" (click)="routeToSellers()">Sellers</button>
+      <button mat-stroked-button color="primary" (click)="routeToInfo()">Info</button>
+    </div>
+  </nav>
+</header>
