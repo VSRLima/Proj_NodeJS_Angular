@@ -1,4 +1,4 @@
-## RTB House Test
+## Project Node.Js, Express and Angular
 This project was built with the objective to test my skills to create a simple WebApp using Node.JS, Express and a UI framework (Angular, React,
 Vue etc).
 
